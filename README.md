@@ -11,10 +11,10 @@ Any omissions here? Likely. Message me if I've left any important code or config
 Legal Notice: Penetration testing should only be conducted within an isolated testing environment that you own, or for a client with whom clear rules of engagement have been agreed upon and contracted. Let's keep our hacking ethical!
 
 ## Learning References
-License:   https://choosealicense.com/licenses/unlicense/ 
-cherrypy:  https://docs.cherrypy.org/en/latest/tutorials.html
-Cartoon:   https://xkcd.com/327/
-            https://www.explainxkcd.com/wiki/index.php/327:_Exploits_of_a_Mom
-            https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables
-OWASP:     https://www.owasp.org/index.php/SQL_Injection
-Also:      http://bobby-tables.com/python
+ - License:   https://choosealicense.com/licenses/unlicense/ 
+ - cherrypy:  https://docs.cherrypy.org/en/latest/tutorials.html
+ - Cartoon:   https://xkcd.com/327/
+ -             https://www.explainxkcd.com/wiki/index.php/327:_Exploits_of_a_Mom
+ -             https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables
+ - OWASP:     https://www.owasp.org/index.php/SQL_Injection
+ - Also:      http://bobby-tables.com/python
