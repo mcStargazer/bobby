@@ -89,10 +89,6 @@ class mysqldb(object):
             First Name: <input size=45 type="text" name="first"/><p>
             <button type="submit">Print Info to Screen</button>
             </form>
-            "Robert"<br>
-            "Robert' OR 1=1); -- #"<br>            
-            "'); UPDATE students SET first='Bob' WHERE last='Tables'; -- #"<br>
-            "Robert'); DROP TABLE students; -- #"<br>
           </h1></center></body>
         </html>
         """
