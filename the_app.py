@@ -4,23 +4,11 @@
 # "I Spy With MySQLi" - Starring CherryPy, with co-star mysql!
 ##############################################################################
 
-# REFERENCES AND PLACES TO START:
-# License:   https://choosealicense.com/licenses/unlicense/ 
-# cherrypy:  https://docs.cherrypy.org/en/latest/tutorials.html
-# Cartoon:   https://xkcd.com/327/
-#            https://www.explainxkcd.com/wiki/index.php/327:_Exploits_of_a_Mom
-#            https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables
-# OWASP:     https://www.owasp.org/index.php/SQL_Injection
-# Also:      http://bobby-tables.com/python
-# OKCPython  https://www.meetup.com/okcpython/events/vtdhfpyzcbmb/
-
-
 #
 # WARNING: Do not attempt penetration testing in the wild! Only do so
 #          within your own isolated environment, or ethically and
-#          under contract and with clearly defined rules of engagement.
+#          under contract with clearly defined rules of engagement.
 #
-
 
 # import from the future
 from __future__ import print_function
@@ -116,6 +104,7 @@ class mysqldb(object):
         """
         The page handler for retrieval of student data
         """
+        # !!! CHANGE the db_creds.json filepath to your file's location !!!
         conf = get_config("./creds/db_creds.json")
         con = get_connection(conf)
         cur = con.cursor()
