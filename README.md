@@ -17,6 +17,6 @@ Legal Notice: Penetration testing should only be conducted within an isolated te
  - Cartoon:         https://xkcd.com/327/
  - Explain the Mom: https://www.explainxkcd.com/wiki/index.php/327:_Exploits_of_a_Mom
  - Explain Bobby:   https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables
- - OWASP on SQLi:   https://www.owasp.org/index.php/SQL_Injection
+ - Mitigate SQLi:   https://www.owasp.org/index.php/SQL_Injection
  - Also:            http://bobby-tables.com/python
  - General OWASP:   https://www.owasp.org/ <-- Go here if interested in seeing just how deep the security rabbit hole goes... well, really this is just the beginning... but that's a very good place to start.
