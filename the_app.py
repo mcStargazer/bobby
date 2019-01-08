@@ -48,7 +48,8 @@ def get_connection(conf):
     """
     INPUTS:
         JSON configuration file as string. Comments consisting
-        of whole lines may be inserted if first character is '#'.
+        of whole lines may be inserted if first character is '#',
+        and the data structure is still closed properly.
     OUTPUT:
         Mysql connection
     """
