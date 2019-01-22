@@ -86,7 +86,7 @@ class mysqldb(object):
           <body bgcolor="#7070a0"><center>
             <h2>Student Information</h2>
             <form method="post" action="/mysqldb/get_info">
-            First Name: <input size=45 type="text" name="first"/><p>
+            First Name: <input size=60 type="text" name="first"/><p>
             <button type="submit">Print Info to Screen</button>
             </form>
           </h1></center></body>
@@ -97,7 +97,7 @@ class mysqldb(object):
 
 
     @cherrypy.expose
-    def get_info(self, first, safer=True):
+    def get_info(self, first, safer=False):
         """
         The page handler for retrieval of student data
         """
@@ -116,11 +116,15 @@ class mysqldb(object):
             print ("result:  " + cur._last_executed)
             print ("#"*80 + '\n')
         else:
+
+            #
             # WARNING: The following remediation is not advertised as the
             #          best risk mitigation needed in this script, nor is
             #          it advertised as the only mitigation needed. As always
             #          you are completely responsible for securing your
             #          own applications against bad actors!
+            #
+
             sql = "SELECT * FROM students WHERE (first = %s)"
             cur.execute(sql, (first, ))
             print ('\n' + "#"*80)
@@ -226,8 +230,11 @@ if __name__ == '__main__':
     ##########################################################################
 
     # data confidentiality lost through exfiltration of data
-    payload0 = "Robert' OR 1=1); -- #"                  
+    p0 = "Robert' OR 1=1); -- #"                  
     
+    # data integrity compromised with update
+    p1 = "'); UPDATE students SET first='Red' WHERE last='Hat'; COMMIT; -- #"
+
     # data availability lost through destruction of table
-    payload2 = "Robert'); DROP TABLE students; -- #"
-    
+    p2 = "Robert'); DROP TABLE students; -- #"
+
